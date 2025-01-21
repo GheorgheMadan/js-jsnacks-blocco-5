@@ -21,3 +21,9 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+// Utilizzo il metodo  FIND per trovare e stampare soltanto ciò che mi serve
+const studenteID2 = students.find((studente)=>{
+  return studente.id === 2
+})
+console.log(studenteID2);
