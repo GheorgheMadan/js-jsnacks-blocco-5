@@ -21,9 +21,15 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
-
+// Versione filter per trovare la classe 
 const classeMarco = students.filter((studente)=>{
   return studente.name === 'Marco Lanci'
 })
-
+// Dato che ci restituisce un array con un oggetto metto tra le quadre l'indice 0 ovvero la sua posizione nell'array
 console.log(classeMarco[0].class);
+
+// Versione find per trovare la classe di Marco Lanci
+const getClass = students.find((studente)=>{
+    return studente.name === 'Marco Lanci'
+})
+console.log(getClass.class);
